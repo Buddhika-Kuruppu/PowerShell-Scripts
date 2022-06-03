@@ -30,3 +30,6 @@ Foreach ($Service in $Services){
         Write-Output "Check the Service - Status of $ServiceDisplayName is $ServiceStatus"
     }
 }
+
+# Get-Service -ComputerName $ComputerName | Where-Object -Property Status -eq 'Stopped'
+# Get-Service -ComputerName $ComputerName | Where-Object -Property Status -eq 'Running'
